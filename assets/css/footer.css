@@ -1,0 +1,42 @@
+footer {
+    position: relative;
+	text-align: center;
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	padding: 20px 10px;
+}
+.footer-info h2 {
+	font-size: 1.8rem;
+}
+.footer-info p {
+	font-size: 0.9rem;
+}
+
+.footer-info a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1rem;
+	color: black;
+	margin-left: 10px;
+}
+
+.fa-brands {
+	margin-right: 10px;
+	font-size: 1.2rem;
+}
+
+.fa-square-facebook {
+	color: dodgerblue;
+}
+
+.fa-square-instagram {
+	color: rgb(152, 12, 152);
+}
+.white-block-right {
+	position: absolute;
+	height: 40px;
+	width: 60%;
+	background-color:#e1eaef;
+	top:-40px;
+	left: -50px;
+	transform: skew(45deg);
+}

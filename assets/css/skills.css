@@ -1,0 +1,109 @@
+@import url('../css/header.css');
+@import url('../css/footer.css');
+@import url('./styles.css');
+
+.projects-container {
+	text-align: center;
+	margin-top: 100px;
+}
+.projects-heading {
+	text-transform: uppercase;
+	font-size: 2.2rem;
+}
+.projects-heading-color {
+	color: crimson;
+}
+.projects-heading-line {
+	margin: 10px auto;
+	width: 70%;
+}
+.projects-text {
+	font-size: 0.8rem;
+	margin: 5% 15%;
+}
+
+.skills-heading{
+    text-align: center;
+    margin: 20px 10px;
+}
+
+/*** <--- CIRCLE STYLES ---> ***/
+.wrap-circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #fffefe;
+  margin-bottom: 40px;
+}
+
+.circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background: #FFCDB2;
+  overflow: hidden;
+}
+.circle.per-25 {
+  background-image: conic-gradient(#B5838D 25%, #FFCDB2 0);
+}
+.circle.per-50 {
+  background-image: conic-gradient(#B5838D 50%, #FFCDB2 0);
+}
+.circle.per-75 {
+  background-image: conic-gradient(#B5838D 75%, #FFCDB2 0);
+}
+.circle.per-100 {
+  background-image: conic-gradient(#B5838D 100%, #FFCDB2 0);
+}
+.circle .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  height: 115px;
+  background: #ffffff;
+  border-radius: 50%;
+  font-size: 1.85em;
+  font-weight: 300;
+  color: black;
+}
+
+ .skills{
+    font-size: 2.5rem;
+    margin-left: 10px;
+}
+
+@media (min-width:992px){
+    .circle{
+        width: 300px;
+        height: 300px;
+    }
+    .circle .inner{
+        width: 230px;
+        height: 230px;
+    }
+    .skills{
+        font-size: 6rem;
+        margin-left: 10px;
+    }
+
+    .slidein{
+      animation: slidein 3s;
+    }
+}
+
+@keyframes slidein{
+  0%{transform: translateY(-200px);
+  visibility: hidden;}
+  50%{transform: translateY(-100px);
+  visibility: hidden;}
+  100%{transform: translateY(0);}
+}
